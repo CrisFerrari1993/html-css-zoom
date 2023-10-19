@@ -11,10 +11,10 @@
     position: fixed;
     display: flex;
     justify-content: flex-end;
-    align-content: center;
+    align-items: center;
     top: 0;
     left: 0;
-    height: fit-content;
+    height: 30px;
     width: 100%;
     z-index: 500;
     background-color: rgb(22, 22, 22);
@@ -32,10 +32,11 @@
     width: fit-content;
     background-color: rgb(119, 119, 119);
     padding: 3px;
+    cursor: pointer;
 }
 /* Main page rules */
 .main_container {
-    height: 90vh;
+    height: 95vh;
     max-width: 100%;
     display: flex;
     flex-flow: row wrap;
@@ -47,20 +48,34 @@
 /* navbar down aka footer rules */
 .navbar_down {
     display: flex;
+    position: relative;
     justify-content: space-between;
     align-content: center;
     bottom: 0;
     left: 0;
     width: 100%;
     background-color: rgb(49, 49, 49);
-    height: 10vh;
+    height: 5vh;
     z-index:1;
 }
 .left, .center, .right {
     display: flex;
 }
+.right {
+    width: 150px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(70, 70, 70);
+}
+.right p {
+    color: red;
+    cursor: pointer;
+}
 
 .btn {
+    cursor: pointer;
     display: flex;
     align-items: center;
     padding: 10px;
