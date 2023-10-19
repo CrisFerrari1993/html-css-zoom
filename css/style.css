@@ -56,9 +56,10 @@
     height: 10vh;
     z-index:1;
 }
-.left {
+.left, .center, .right {
     display: flex;
 }
+
 .btn {
     display: flex;
     align-items: center;
