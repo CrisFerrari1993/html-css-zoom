@@ -52,8 +52,32 @@
     bottom: 0;
     left: 0;
     width: 100%;
-    /* debug */
+    background-color: rgb(49, 49, 49);
     height: 10vh;
-    background-color: rgb(77, 77, 77);
     z-index:1;
+}
+.left {
+    display: flex;
+}
+.btn {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    color: white;
+    /* debug */
+    /* background-color: red */
+}
+.icon {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+.icon p {
+    margin-top:7px;
+    color: white;
+    font-size:13px;
+}
+.caret {
+    margin-left: 10px;
+    font-size: 10px;
 }
