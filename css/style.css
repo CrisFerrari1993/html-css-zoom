@@ -36,26 +36,41 @@
 }
 /* Main page rules */
 .main_container {
-    height: 95vh;
-    max-width: 100%;
     display: flex;
     flex-flow: row wrap;
     background-color: rgb(22,22,22);
     z-index: 0;
-    overflow-y: auto;
+    overflow-y: scroll;
+    height: 100vh;
     /* debug */
+}
+.col {
+
+    position: relative;
+} 
+.col img{
+    max-width: 100%;
+    max-height: 100%;
+}
+.col_item {
+    background-color: rgba(0,0,0,0.5);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    color: white;
+    font-size: 14px;
+    max-width: fit-content;
+    padding: 2px;
 }
 /* navbar down aka footer rules */
 .navbar_down {
+    position: fixed;
     display: flex;
     position: relative;
     justify-content: space-between;
     align-content: center;
-    bottom: 0;
-    left: 0;
     width: 100%;
     background-color: rgb(49, 49, 49);
-    height: 5vh;
     z-index:1;
 }
 .left, .center, .right {
