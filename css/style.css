@@ -7,14 +7,17 @@
     font-family: Arial, Helvetica, sans-serif;
 }
 /* Navbar top rules */
-.navbar_top{
+header{
     position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 500;
+    width: 100%;
+}
+.navbar_top{
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    top: 0;
-    left: 0;
-    height: 3vh;
     width: 100%;
     z-index: 500;
     background-color: rgb(22, 22, 22);
@@ -41,9 +44,8 @@
     flex-flow: row wrap;
     background-color: rgb(22,22,22);
     z-index: 0;
-    height: 90%vh;
     /* debug */
-    padding: 50px 50px 50px 50px;
+    padding: 1% 5% 2% 5%;
 
 }
 .col {
@@ -65,10 +67,13 @@
     padding: 2px;
 }
 /* navbar down aka footer rules */
-.navbar_down {
-    position: fixed;
+footer {
+    position:fixed;
     bottom: 0;
     left: 0;
+    width: 100%;
+}
+.navbar_down {
     display: flex;
     justify-content: space-between;
     align-content: center;
